@@ -1,7 +1,7 @@
 import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm'
 
 @Entity('appointments')
-class Appointments {
+export default class Appointments {
   @PrimaryGeneratedColumn('uuid')
   id: string
 
@@ -11,5 +11,3 @@ class Appointments {
   @Column('timestamp with time zone')
   date: Date
 }
-
-export default Appointments
